@@ -32,7 +32,7 @@ jobs:
         name: Install dependencies
       - name: Pack assets
         run: tar -cf assets.tar .
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         name: Save assets
         with:
           name: installed-artifact
@@ -63,7 +63,7 @@ jobs:
       - name: Pack built assets
         run: tar -uf assets.tar .
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         name: Save built assets
         with:
           name: built-artifact
