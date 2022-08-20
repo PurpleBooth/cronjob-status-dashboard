@@ -125,6 +125,7 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
       - run: npm run test:ci
   dependabot:
+    name: Merge dependabot PR
     needs:
       - test
       - style
@@ -142,6 +143,7 @@ jobs:
           PR_URL: ${{github.event.pull_request.html_url}}
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
   docker-push:
+    name: Build & push new version of docker image
     if: ${{ ( github.head_ref || github.ref_name ) == 'main' }}
     needs:
       - test
@@ -204,7 +206,8 @@ jobs:
           COSIGN_EXPERIMENTAL: "true"
         run: cosign sign ${{ steps.meta.outputs.tags }}@${{ steps.build-and-push.outputs.digest }}
 
-  release:
+  helm-release:
+    name: Release changes to the helm chart
     needs:
       - docker-push
     # depending on default permission settings for your org (contents being read-only or read-write for workloads), you will have to add permissions
