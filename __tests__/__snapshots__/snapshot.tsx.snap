@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders homepage unchanged 1`] = `
+<div>
+  <div
+    class="m-8"
+  >
+    <main
+      class="flex flex-wrap gap-4 justify-center"
+    >
+      <div
+        class="justify-self-center bg-neutral-100 p-0 m-0 drop-shadow p-0 m-2 dark:bg-neutral-800 border-red-500 border-2 container"
+      >
+        <h1>
+          Error
+        </h1>
+        <pre>
+          {}
+        </pre>
+      </div>
+    </main>
+  </div>
+</div>
+`;

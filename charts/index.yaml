@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  cronjob-status-dashboard:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-08-20T10:37:23.926777+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 4a52fef9aef2283f3ae76278e5bd34548b71cbef8b1ce6b55cf3841a2e435b5b
+    name: cronjob-status-dashboard
+    type: application
+    urls:
+    - cronjob-status-dashboard-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-08-20T10:37:23.926086+02:00"
