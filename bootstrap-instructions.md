@@ -58,3 +58,5 @@ git clone git@github.com:PurpleBooth/cronjob-status-dashboard.git
 npm install
 
 ```
+
+![Screenshot 2022-08-22 at 12 56 19](https://user-images.githubusercontent.com/910448/185915692-b4cc7756-45a9-4b44-9bf0-5bf460007e91.png)
