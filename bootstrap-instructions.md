@@ -6,6 +6,7 @@ If you don't already have access to a cluster, you'll need something to try it o
 ### Pre-requisites
 
 Docker (or alternative)
+kubectl (see https://kubernetes.io/docs/tasks/tools/)
 
 ### Kind
 
