@@ -1,6 +1,7 @@
 # How to start from nothing
 
 ## Install Kubernetes
+
 If you don't already have access to a cluster, you'll need something to try it out.
 
 ### Pre-requisites
@@ -16,17 +17,17 @@ On MacOS: `brew install kind`
 
 then...
 
-*Note* `kind create cluster` can take > 5 minutes
+_Note_ `kind create cluster` can take > 5 minutes
 
 ```
 %kind create cluster
 Creating cluster "kind" ...
- ✓ Ensuring node image (kindest/node:v1.24.0) 🖼 
- ✓ Preparing nodes 📦  
- ✓ Writing configuration 📜 
- ✓ Starting control-plane 🕹️ 
- ✓ Installing CNI 🔌 
- ✓ Installing StorageClass 💾 
+ ✓ Ensuring node image (kindest/node:v1.24.0) 🖼
+ ✓ Preparing nodes 📦
+ ✓ Writing configuration 📜
+ ✓ Starting control-plane 🕹️
+ ✓ Installing CNI 🔌
+ ✓ Installing StorageClass 💾
 Set kubectl context to "kind-kind"
 You can now use your cluster with:
 
@@ -47,10 +48,9 @@ CoreDNS is running at https://127.0.0.1:53000/api/v1/namespaces/kube-system/serv
 kubectl create -f https://k8s.io/examples/application/job/cronjob.yaml
 ```
 
-
 ## Clone and run
 
-*Note* npm install includes `Next` and can take > 5 minutes
+_Note_ npm install includes `Next` and can take > 5 minutes
 
 ```
 
