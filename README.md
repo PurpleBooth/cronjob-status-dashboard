@@ -48,3 +48,5 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+See [bootstrap-instructions.md](./bootstrap-instructions.md) for further instructions on how to setup a local cluster to play with.
