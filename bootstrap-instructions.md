@@ -15,6 +15,8 @@ On MacOS: `brew install kind`
 
 then...
 
+*Note* `kind create cluster` can take > 5 minutes
+
 ```
 %kind create cluster
 Creating cluster "kind" ...
@@ -34,4 +36,24 @@ Have a nice day! 👋
 % kubectl cluster-info --context kind-kind
 Kubernetes control plane is running at https://127.0.0.1:53000
 CoreDNS is running at https://127.0.0.1:53000/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+```
+
+## Create a K8s cron job
+
+(from https://kubernetes.io/docs/tasks/job/automated-tasks-with-cron-jobs/)
+
+```
+kubectl create -f https://k8s.io/examples/application/job/cronjob.yaml
+```
+
+
+## Clone and run
+
+*Note* npm install includes `Next` and can take > 5 minutes
+
+```
+
+git clone git@github.com:PurpleBooth/cronjob-status-dashboard.git
+npm install
+
 ```
