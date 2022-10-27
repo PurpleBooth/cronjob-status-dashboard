@@ -185,7 +185,7 @@ jobs:
 
       - id: lowercase-repo
         name: Fix repo name
-        uses: ASzc/change-string-case-action@v3
+        uses: ASzc/change-string-case-action@v4
         with:
           string: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
