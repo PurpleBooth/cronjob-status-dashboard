@@ -15,7 +15,7 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "@heroicons/react": "^2.0.13",
-    "@kubernetes/client-node": "^0.17.1",
+    "@kubernetes/client-node": "^0.18.0",
     "date-fns": "^2.29.3",
     "swr": "^2.0.0"
   },
